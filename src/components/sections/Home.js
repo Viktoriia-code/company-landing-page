@@ -54,6 +54,7 @@ const Box = styled.div`
 const Title = styled.h2`
   font-size: ${props => props.theme.fontxxl};
   color: ${props => props.theme.body};
+  text-shadow: 1px 1px 4px ${(props) => `rgba(${props.theme.textRgba}, 0.5)`};
   width: 80%;
   align-self: flex-start;
 
