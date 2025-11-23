@@ -25,7 +25,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build -u 'github-actions' -e 'github-actions@users.noreply.github.com'",
+    "deploy": "gh-pages -d build -b gh-pages",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
