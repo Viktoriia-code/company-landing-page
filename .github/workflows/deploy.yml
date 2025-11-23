@@ -40,5 +40,8 @@ jobs:
           # Upload entire repository
           path: 'build'
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        run: |
+          npm install gh-pages --save-dev
+          npm run deploy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
