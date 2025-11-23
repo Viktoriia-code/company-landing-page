@@ -2,6 +2,8 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import Button from '../Button'
 import Model from '../Model'
+import Happi100 from '../../assets/products/Soil-Scout-Happi100.png';
+import CircleImg from '../../assets/ui/rounded-text.png';
 
 const Section = styled.section`
   min-height: ${props => `calc(100vh - ${props.theme.navHeight})`};
@@ -186,14 +188,14 @@ const Home = () => {
         </Box>
         <Box>
           <ImageContainer>
-            <img src="/products/Soil-Scout-Happi100.png" alt="Happi100 wireless real-time soil oxygen sensor" />
+            <img src={Happi100} alt="Happi100 wireless real-time soil oxygen sensor" />
           </ImageContainer>
         </Box>
         <Round>
           <Circle>
             &#x2193;
           </Circle>
-          <img src="/rounded-text.png" alt="Explore the new era of soil monitoring" />
+          <img src={CircleImg} alt="Explore the new era of soil monitoring" />
         </Round>
       </Container>
       <ModelContainer>

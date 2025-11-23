@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import LogoImage from '../assets/logo/logo-white.png';
 
 
 const LogoImg = styled.img`
@@ -19,7 +20,7 @@ const LogoImg = styled.img`
 const LogoWhite = () => {
   return (
     <Link to="/">
-      <LogoImg src="/logo-white.png" alt="Logo" />
+      <LogoImg src={LogoImage} alt="Logo" />
     </Link>
   );
 };

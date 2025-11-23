@@ -1,6 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import Button from '../Button';
+import Icon1 from '../../assets/services/benefit-icon-1.png';
+import Icon2 from '../../assets/services/benefit-icon-2.png';
+import Icon3 from '../../assets/services/benefit-icon-3.png';
+import DeviceImage from '../../assets/products/Scout_Sensors_main.png';
+import GrassBg from '../../assets/ui/grass.jpg';
+import SoilBg from '../../assets/ui/soil.jpg';
 
 const Section = styled.section`
   min-height: 100vh;
@@ -21,7 +27,7 @@ const Container = styled.div`
 const Grass = styled.div`
   width: 100%;
   height: 300px;
-  background: url("/grass.jpg") center/cover no-repeat;
+  background: url(${GrassBg}) center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +53,7 @@ const Grass = styled.div`
 const Soil = styled.div`
   min-height: calc(100vh - 300px);
   width: 100%;
-  background: url("/soil.jpg");
+  background: url(${SoilBg});
   background-size: cover;
   display: flex;
   align-items: center;
@@ -128,7 +134,7 @@ const Benefits = () => {
         <Container>
 <CardsRow>
           <Card>
-            <img src="/services/benefit-icon-1.png" alt="Irrigation Icon" width="60" />
+            <img src={Icon1} alt="Irrigation Icon" width="60" />
             <h3>Reduce Costs in Farming</h3>
             <p>Follow the Four-Step Process to Optimize Irrigation!</p>
             <div className="btnArea">
@@ -137,7 +143,7 @@ const Benefits = () => {
           </Card>
 
           <Card>
-            <img src="/services/benefit-icon-2.png" alt="Irrigation Icon" width="60" />
+            <img src={Icon2} alt="Irrigation Icon" width="60" />
             <h3>Improve Crop Production</h3>
             <p>Smart Farming Research: How Soil Moisture Affects Crop Yield?</p>
             <div className="btnArea">
@@ -146,7 +152,7 @@ const Benefits = () => {
           </Card>
 
           <Card>
-            <img src="/services/benefit-icon-3.png" alt="Irrigation Icon" width="60" />
+            <img src={Icon3} alt="Irrigation Icon" width="60" />
             <h3>Optimize Sports Turf Maintenance</h3>
             <p>Download Data-Driven Sports Turf Whitepaper!</p>
             <div className="btnArea">
@@ -154,7 +160,7 @@ const Benefits = () => {
             </div>
           </Card>
         </CardsRow>
-        <FloatingImage src="/Scout_Sensors_main.png" alt="Soil Scout Sensor" />
+        <FloatingImage src={DeviceImage} alt="Soil Scout Sensor" />
         </Container>
         
       </Soil>

@@ -7,6 +7,15 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay, EffectCards } from "swiper";
 import Arrow from '../assets/Arrow.svg'
+import Image1 from '../assets/company/dissertation.jpg';
+import Image2 from '../assets/company/development_versions.jpg';
+import Image3 from '../assets/company/WorldSoilDay.jpg';
+import Image4 from '../assets/company/soil_scout_golf.jpg';
+import Image5 from '../assets/company/program.png';
+import Image6 from '../assets/company/GIS.jpg';
+import Image7 from '../assets/company/components.png';
+import Image8 from '../assets/company/packaging.jpg';
+import Image9 from '../assets/company/Pitching_Comp.jpg';
 
 
 const Container = styled.div`
@@ -111,15 +120,15 @@ const Carousel = () => {
         modules={[Pagination, Navigation, Autoplay, EffectCards]}
         className="mySwiper"
       >
-        <SwiperSlide><img src="/company/dissertation.jpg" alt="Dissertation" /></SwiperSlide>
-        <SwiperSlide><img src="/company/development_versions.jpg" alt="DevelopmentVersions" /></SwiperSlide>
-        <SwiperSlide><img src="/company/WorldSoilDay.jpg" alt="WorldSoilDay" /></SwiperSlide>
-        <SwiperSlide><img src="/company/soil_scout_golf.jpg" alt="SoilScoutGolf" /></SwiperSlide>
-        <SwiperSlide><img src="/company/program.png" alt="Program" /></SwiperSlide>
-        <SwiperSlide><img src="/company/GIS.jpg" alt="GIS" /></SwiperSlide>
-        <SwiperSlide><img src="/company/components.png" alt="Components" /></SwiperSlide>
-        <SwiperSlide><img src="/company/packaging.jpg" alt="Packaging" /></SwiperSlide>
-        <SwiperSlide><img src="/company/Pitching_Comp.jpg" alt="PitchingComp" /></SwiperSlide>
+        <SwiperSlide><img src={Image1} alt="Dissertation" /></SwiperSlide>
+        <SwiperSlide><img src={Image2} alt="DevelopmentVersions" /></SwiperSlide>
+        <SwiperSlide><img src={Image3} alt="WorldSoilDay" /></SwiperSlide>
+        <SwiperSlide><img src={Image4} alt="SoilScoutGolf" /></SwiperSlide>
+        <SwiperSlide><img src={Image5} alt="Program" /></SwiperSlide>
+        <SwiperSlide><img src={Image6} alt="GIS" /></SwiperSlide>
+        <SwiperSlide><img src={Image7} alt="Components" /></SwiperSlide>
+        <SwiperSlide><img src={Image8} alt="Packaging" /></SwiperSlide>
+        <SwiperSlide><img src={Image9} alt="PitchingComp" /></SwiperSlide>
       </Swiper>
     </Container>
   )

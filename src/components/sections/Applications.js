@@ -4,6 +4,10 @@ import DrawSvg from '../DrawSvg'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
 import { Link } from 'react-router-dom'
+import Icon1 from '../../assets/services/agriculture-service.png'
+import Icon2 from '../../assets/services/golf-service.png'
+import Icon3 from '../../assets/services/sport-field-service.png'
+import Icon4 from '../../assets/services/soil-monitoring-service.png'
 
 const Section = styled.section`
   min-height: 100vh;
@@ -229,10 +233,10 @@ const Applications = () => {
         </SvgContainer>
         <Items>
           <Item>&nbsp;</Item>
-          <ApplicationsItem addToRefs={addToRefs} img="services/agriculture-service.png" title="Agriculture" subtext="Understand soil, improve crop production while reducing operational costs and irrigation water use." linkText="‍Learn about wireless soil monitoring in Smart Farming" link="#"></ApplicationsItem>
-          <ApplicationsItem addToRefs={addToRefs} img="services/golf-service.png" title="Golf Courses" subtext="Maintain healthy, robust, and smooth fairways and greens while optimizing water consumption." linkText="Read how Golf courses benefit from wireless soil sensors" link="#"></ApplicationsItem>
-          <ApplicationsItem addToRefs={addToRefs} img="services/sport-field-service.png" title="Sports Fields" subtext="Provide players and athletes a uniform, safe, and robust grass for a full season." linkText="Learn how to keep better Sports turf with soil monitoring" link="#"></ApplicationsItem>
-          <ApplicationsItem addToRefs={addToRefs} img="services/soil-monitoring-service.png" title="Soil Monitoring" subtext="What is soil monitoring, how wireless sensors work, and what are the benefits for you?" linkText="Learn about wireless soil moisture sensors" link="#"></ApplicationsItem>
+          <ApplicationsItem addToRefs={addToRefs} img={Icon1} title="Agriculture" subtext="Understand soil, improve crop production while reducing operational costs and irrigation water use." linkText="‍Learn about wireless soil monitoring in Smart Farming" link="#"></ApplicationsItem>
+          <ApplicationsItem addToRefs={addToRefs} img={Icon2} title="Golf Courses" subtext="Maintain healthy, robust, and smooth fairways and greens while optimizing water consumption." linkText="Read how Golf courses benefit from wireless soil sensors" link="#"></ApplicationsItem>
+          <ApplicationsItem addToRefs={addToRefs} img={Icon3} title="Sports Fields" subtext="Provide players and athletes a uniform, safe, and robust grass for a full season." linkText="Learn how to keep better Sports turf with soil monitoring" link="#"></ApplicationsItem>
+          <ApplicationsItem addToRefs={addToRefs} img={Icon4} title="Soil Monitoring" subtext="What is soil monitoring, how wireless sensors work, and what are the benefits for you?" linkText="Learn about wireless soil moisture sensors" link="#"></ApplicationsItem>
         </Items>
       </Container>
     </Section>

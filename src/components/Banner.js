@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import BackgroundImg from '../assets/products/prototype-banner.png';
 
 const Section = styled.section`
   width: 100vw;
@@ -118,7 +119,7 @@ const Banner = () => {
   return (
     <Section>
       <ImgContainer>
-        <img src="/products/prototype-banner.png" alt="Banner with the prototype" />
+        <img src={BackgroundImg} alt="Banner with the prototype" />
       </ImgContainer>
       <Title>Ready to change<br/>how you manage your soil?</Title>
       <BtnContainer>
