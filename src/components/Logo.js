@@ -6,7 +6,7 @@ import LogoImage from '../assets/logo/logo.png';
 
 const LogoImg = styled.img`
   height: ${props => props.theme.navHeight};
-  width: 18rem;
+  width: 16rem;
   height: auto;
   cursor: pointer;
   transition: all 0.2s ease;

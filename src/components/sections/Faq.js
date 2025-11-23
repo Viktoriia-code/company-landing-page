@@ -117,7 +117,7 @@ const Faq = () => {
           </Accordion>
         </Box>
       </Container>
-      <Button text="Ask Your Question" link="#" bg={props => props.theme.accentBg} />
+      <Button text="Ask your question" link="#" bg={props => props.theme.accentBg} />
     </Section>
   )
 }

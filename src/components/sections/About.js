@@ -53,7 +53,6 @@ const Box = styled.div`
 
 const Title = styled.h2`
   font-size: ${(props) => props.theme.fontxxl};
-  text-transform: capitalize;
   color: ${(props) => props.theme.text};
   align-self: flex-start;
   margin: 0 auto;
@@ -91,8 +90,8 @@ const SubText = styled.p`
 `
 
 const ButtonContainer = styled.div`
-  width: 80%;
-  margin: 1rem auto;
+  width: 100%;
+  margin: 0 auto;
   align-self: flex-start;
   display: flex;
 
@@ -114,7 +113,7 @@ const About = () => {
         </Box>
         <Box>
           <Title>
-            Welcome to the future of soil monitoring
+            Welcome to the future of soil monitoring!
           </Title>
           <SubText>
             Soil Scout provides the most advanced fully buried underground wireless soil sensor and monitoring solution for professionals in Agriculture, Golf and Sports turf maintenance.
@@ -126,7 +125,7 @@ const About = () => {
             Farmers and agriculture professionals around the world use Soil Scout to understand their fields, optimize soil conditions for better growth and improve crop production, also reducing operational costs and water consumption.
           </SubText>
           <ButtonContainer>
-            <Button text="JOIN OUR TWITTER" link="#" />
+            <Button text="Join our Twitter" link="https://twitter.com" />
           </ButtonContainer>
         </Box>
       </Container>

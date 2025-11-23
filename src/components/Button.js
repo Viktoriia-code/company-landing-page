@@ -1,5 +1,3 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Btn = styled.button`
@@ -38,13 +36,13 @@ const Btn = styled.button`
   }
 `
 
-const Button = ({text, link, bg}) => {
+const Button = ({text, link="/", bg}) => {
   return (
-    <Btn bg={bg}>
-      <Link to={link} aria-label={text}>
-        {text}
-      </Link>
-    </Btn>
+    <a href={link} aria-label={text}>
+      <Btn bg={bg}>
+          {text}
+      </Btn>
+    </a>
   )
 }
 

@@ -15,6 +15,7 @@ const Section = styled.section`
     display: flex;
     align-items: center;
   }
+  overflow: hidden;
 `
 
 const Container = styled.div`
@@ -45,6 +46,7 @@ const Box = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 1rem;
+  z-index: 30;
 
   @media (max-width: 64em) {
     width: 100%;
@@ -92,11 +94,12 @@ const ButtonContainer = styled.div`
   @media (max-width: 64em) {
     align-self: center;
   }
-      z-index: 30;
+  z-index: 30;
 `
 
 const ImageContainer = styled.div`
   width: 100%;
+  z-index: 30;
 
   img {
     width: 100%;
@@ -120,8 +123,8 @@ const rotate = keyframes`
 
 const Round = styled.div`
   position: absolute;
-  top: 4rem;
-  right: 15%;
+  bottom: 2rem;
+  right: 90%;
   width: 6rem;
   height: 6rem;
   padding: 0.2rem;
@@ -172,7 +175,7 @@ const ModelContainer = styled.div`
   left: 0;
   width: 100%;
   z-index: 1;
-  opacity: 0.6;
+  opacity: 0.5;
 `
 
 const Home = () => {
@@ -182,9 +185,9 @@ const Home = () => {
         <Box>
           <Title>Happi100</Title>
           <Title>First wireless real-time soil oxygen sensor</Title>
-          <Subtitle>A game changer for the industry!</Subtitle>
+          <Subtitle>A game changer for the industry of soil monitoring</Subtitle>
           <ButtonContainer>
-            <Button text="Learn More" link="#about" />
+            <Button text="Learn More" />
           </ButtonContainer>
         </Box>
         <Box>

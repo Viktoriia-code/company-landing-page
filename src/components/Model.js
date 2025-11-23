@@ -64,8 +64,8 @@ function Points() {
       </bufferGeometry>
       <pointsMaterial
         map={imgTex}
-        color={'black'}
-        size={0.2}
+        color={'white'}
+        size={0.6}
         sizeAttenuation
         transparent={false}
         alphaTest={0.5}
@@ -76,8 +76,8 @@ function Points() {
 
 function Model() {
   return (
-    <div style={{ width: '100vw', height: '50vh' }}>
-      <Canvas camera={{ position: [0, 20, 100], fov: 75 }}>
+    <div style={{ width: '140vw', height: '120vh' }}>
+      <Canvas camera={{ position: [0, 90, 50], fov: 95 }}>
         <Suspense fallback={null}>
           <Points />
         </Suspense>

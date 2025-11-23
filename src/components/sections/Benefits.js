@@ -85,8 +85,9 @@ const Card = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: ${(props) => `rgba(0, 0, 0, 0.3)`};
-  padding: 2rem 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   border-radius: 16px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
 
   h3 {
     font-size: 1.4rem;
@@ -138,7 +139,7 @@ const Benefits = () => {
             <h3>Reduce Costs in Farming</h3>
             <p>Follow the Four-Step Process to Optimize Irrigation!</p>
             <div className="btnArea">
-              <Button text="Learn More!" link="#" bg={props => props.theme.button} />
+              <Button text="Learn more" bg={props => props.theme.button} />
             </div>
           </Card>
 
@@ -147,7 +148,7 @@ const Benefits = () => {
             <h3>Improve Crop Production</h3>
             <p>Smart Farming Research: How Soil Moisture Affects Crop Yield?</p>
             <div className="btnArea">
-              <Button text="Learn More!" link="#" bg={props => props.theme.button} />
+              <Button text="Learn more" bg={props => props.theme.button} />
             </div>
           </Card>
 
@@ -156,7 +157,7 @@ const Benefits = () => {
             <h3>Optimize Sports Turf Maintenance</h3>
             <p>Download Data-Driven Sports Turf Whitepaper!</p>
             <div className="btnArea">
-              <Button text="Learn More!" link="#" bg={props => props.theme.button} />
+              <Button text="Learn more" bg={props => props.theme.button} />
             </div>
           </Card>
         </CardsRow>

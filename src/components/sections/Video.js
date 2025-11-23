@@ -40,7 +40,6 @@ const Container = styled.div`
 
 const Title = styled.h2`
   font-size: ${(props) => props.theme.fontxxl};
-  text-transform: capitalize;
   color: ${(props) => props.theme.text};
   display: flex;
   justify-content: center;
@@ -58,7 +57,7 @@ const Title = styled.h2`
 const Video = () => {
   return (
     <Section id="video">
-      <Title>Watch the Soil Scout Story</Title>
+      <Title>Watch the Soil Scout story</Title>
       <Container>
         <iframe
           src="https://www.youtube.com/embed/q9Yuq9QcQgk?rel=0&controls=1&autoplay=0&mute=0&start=0"
