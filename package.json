@@ -1,0 +1,47 @@
+{
+  "name": "soil-scout",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@fontsource/sora": "^5.2.8",
+    "@react-three/drei": "^9.56.4",
+    "@react-three/fiber": "^8.13.0",
+    "gsap": "^3.9.1",
+    "normalize.css": "^8.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.2.1",
+    "react-use": "^17.6.0",
+    "styled-components": "^5.3.3",
+    "swiper": "^9.4.1",
+    "three": "^0.153.0",
+    "web-vitals": "^3.3.2"
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
